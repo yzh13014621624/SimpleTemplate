@@ -1,0 +1,61 @@
+/*
+ * @description: 屏幕1920以上 像素大小的比率为:1
+ * @author: songliubiao
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: songliubiao
+ * @Date: 2019-06-22 13:47:51
+ * @LastEditTime: 2019-06-22 18:10:13
+ * @Copyright: Copyright  ?  2019  Shanghai  Shangjia  Logistics  Co.,  Ltd.  All  rights  reserved.
+ */
+@import '../mixins'
+@media screen and (min-width: 1920px)
+  
+  // input输入框在1920以上显示的宽高
+  input
+    &.ant-input
+      width 200px
+      height 32px
+      font-size 14px
+    &.unset
+      width auto
+    &.input-150
+      width 150px !important
+    &.input-180
+      width 180px !important
+    &.input-220
+      width 220px !important
+
+   // input时间框在1920以上显示的宽高
+  .ant-calendar-picker
+    min-width 200px
+    &.unset
+      width auto
+      min-width unset
+    .ant-calendar-picker-input
+      height 32px
+      
+   // input下拉框在1920以上显示的宽高
+  .ant-select
+    width 200px !important
+    &.select-95
+      width 95px !important
+    &.select-120
+      width 120px !important
+    &.select-150
+      width 150px !important
+    &.select-220
+      width 220px !important
+    .ant-select-selection
+      height 32px
+      .ant-select-selection__rendered
+        line-height 32px
+    .ant-select-selection--multiple
+      min-height unset
+  // form表单在1920以上显示的值
+  .ant-form
+      label
+        font-size 14px !important
+
+  // 页面字体在1920以上的大小
+  // * 
+  //   font-size 14px !important

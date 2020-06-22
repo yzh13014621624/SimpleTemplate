@@ -1,0 +1,72 @@
+/*
+ * @description: 屏幕1024-1366 像素大小的比率为:1.5
+ * @author: songliubiao
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: songliubiao
+ * @Date: 2019-06-22 13:47:51
+ * @LastEditTime: 2019-06-22 18:09:49
+ * @Copyright: Copyright  ?  2019  Shanghai  Shangjia  Logistics  Co.,  Ltd.  All  rights  reserved.
+ */
+@import '../mixins'
+@media screen and (max-width: 1366px) and (min-width: 1024px)
+  // input输入框在1024-1366显示的宽高
+  input
+    &.ant-input
+      width 133px
+      height 21.3px
+      font-size 9.3px
+    &.unset
+      width auto
+    &.input-150
+      width 100px !important
+    &.input-180
+      width 120px !important
+    &.input-220
+      width 146px !important
+
+   // input时间框在1024-1366显示的宽高
+  .ant-calendar-picker
+    min-width 133px
+    &.unset
+      width auto
+      min-width unset
+    .ant-calendar-picker-input
+      height 21.3px
+
+  // input下拉框在1024-1366显示的宽高
+  .ant-select
+    width 133px !important
+    &.select-95
+      width 63px !important
+    &.select-120
+      width 80px !important
+    &.select-150
+      width 100px !important
+    &.select-220
+      width 146px !important
+    .ant-select-selection
+        height 21.3px
+      .ant-select-selection__rendered
+          height 21.3px
+    .ant-select-selection--multiple
+      min-height unset
+
+  // form表单在1024-1366显示的值
+  .ant-form
+    &.ant-form-inline
+      .ant-form-item
+        margin-right 10px
+    .ant-form-item
+      &.m-none
+        margin-left none
+      &.m-20
+        margin-right 20px
+    .ant-form-item-label,
+    .ant-form-item-control
+        line-height 32px
+      label
+        font-size 9.3px !important
+
+  // 页面字体在1024-1366的大小
+  // * 
+  //   font-size 9.3px !important

@@ -1,0 +1,123 @@
+@import '~@/assets/style/mixins'
+#shop-statistic
+  .trend-turnover
+    border 1px solid #E4E4E4
+    margin-bottom 20px
+    .trend-turnover-title
+      border-bottom 1px solid #E4E4E4
+      height 47px
+      padding 0 20px 0
+    .trend-turnover-list-title
+      padding 10px 30px
+      .trend-turnover-list-sale
+        font-size: 18px;
+        font-weight 600
+  .total-turnover
+    border 1px solid #E4E4E4
+    .ant-card-body
+      height 200px
+      > .ant-row
+          height 100%
+      > .ant-row-flex
+          height 100%
+      .placeholder
+        tc()
+        img
+          wh(80%)
+          padding-bottom 10px
+    .total-turnover-title
+      border-bottom 1px solid #E4E4E4
+      background-color #F3F3F3
+      height 47px
+      padding 0 20px 0
+      .turnoverBaseDowloadBtn
+        margin-left 20px
+    .card_item
+      padding 20px
+      .echarts_wrapper
+        position relative
+        height 100%
+        flex-align-center()
+        &.sales_goods
+          justify-content flex-start
+      > .ant-col
+          flex 1
+          &:last-child
+            margin-left 20px
+        .desc
+          margin-bottom 35px
+        .category_name
+          color #333
+          font-size 14px
+        .statistic_num
+          color #333
+          font-size 26px
+        .detail
+          margin-bottom 15px
+        .sales_detail
+          position absolute
+          left 0
+          right 0
+          bottom 0
+        .circle
+          display inline-block
+          wh(10px)
+          border-radius(50%)
+          vertical-align middle
+          &.yellow
+            background-color #FACC14
+          &.gray
+            background-color #E9E9E9
+          &.blue
+            background-color #3399FF
+          &.green
+            background-color #19BC9C
+          &.red
+            background-color #FF6633
+          &.blue2
+            background-color #3FA1FE
+        .sales_money
+          > .ant-col
+              height 100%
+              flex-align-center()
+  .salestatistic
+    // padding: 0 20px
+    .title
+      padding 10px
+      font-weight 600
+      font-size: 18px
+    .circlewhite
+      margin-right: 20px
+      text-align: center
+      display: inline-block
+      width: 20px
+      height 20px
+      border-radius: 10px
+      background-color: #314659
+      color: #fff
+    .circlebrack
+      margin-right: 20px
+      text-align: center
+      display: inline-block
+      width: 20px
+      height 20px
+      border-radius: 10px
+      background-color: #F0F2F5
+      color: #555556
+    .setfontsize
+      font-size: 14px;
+    .line
+      margin-left: 10px
+    .trendExportstyle
+      position: absolute
+      left: 85%
+      top: 0
+.modal 
+  .btn
+    width 100px
+  .ant-form-item
+    flex-align-center()
+  .handleOk
+    background rgba(25,188,156,1)
+    color #fff
+    margin-right 20px

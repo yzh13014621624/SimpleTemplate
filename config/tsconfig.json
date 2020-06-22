@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "pages/*": ["container/pages/*"],
+      "shared/*": ["container/shared/*"]
+    },
+    "isolatedModules": false,
+    "downlevelIteration": true
+  }
+}

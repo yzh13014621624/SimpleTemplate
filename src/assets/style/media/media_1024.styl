@@ -1,0 +1,61 @@
+/*
+ * @description: 屏幕1024以下 像素大小的比率为:1.75
+ * @author: songliubiao
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: songliubiao
+ * @Date: 2019-06-22 13:47:51
+ * @LastEditTime: 2019-06-22 18:09:58
+ * @Copyright: Copyright  ?  2019  Shanghai  Shangjia  Logistics  Co.,  Ltd.  All  rights  reserved.
+ */
+@import '../mixins'
+@media screen and (max-width: 1024px)
+  // input输入框在1024以下显示的值
+  input
+    &.ant-input
+      width 114px
+      height 18.3px
+      font-size 8px
+    &.unset
+      width auto
+    &.input-150
+      width 85px !important
+    &.input-180
+      width 102px !important
+    &.input-220
+      width 125px !important
+
+   // input时间框在1024以下显示的值
+  .ant-calendar-picker
+    min-width 114px
+    &.unset
+      width auto
+      min-width unset
+    .ant-calendar-picker-input
+      height 18.3px
+
+  // input下拉框在1024以下显示的值
+  .ant-select
+    width 114px !important
+    &.select-95
+      width 54.3px !important
+    &.select-120
+      width 74px !important
+    &.select-150
+      width 85px !important
+    &.select-220
+      width 125.7px !important
+    .ant-select-selection
+        height 18.3px
+      .ant-select-selection__rendered
+          height 18.3px
+    .ant-select-selection--multiple
+      min-height unset
+
+  // form表单在1024以下显示的值
+  .ant-form
+      label
+        font-size 8px !important
+
+  // 页面字体在1024以下的大小
+  // * 
+  //   font-size 8px !important

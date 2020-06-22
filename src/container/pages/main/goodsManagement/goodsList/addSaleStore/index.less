@@ -1,0 +1,44 @@
+/* 表格组件 */
+.add-sale-store {
+  .table-container {
+    padding-right: 8px;
+    padding-bottom: 24px;
+    position: relative;
+    .add-button {
+      position: absolute;
+      bottom: 40px;
+    }
+  }
+  .store-divider {
+    margin: 0 0 24px 0;
+  }
+  .bottom {
+    padding-right: 8px;
+    padding-bottom: 24px;
+    .submit-button {
+      text-align: center;
+    }
+    .stores-container {
+      height: 200px;
+      overflow-y: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      align-items:flex-start;
+      padding-left: 20px;
+      padding-top: 20px;
+      .store-items {
+        display: inline-block;
+        padding: 8px 16px;
+        flex-shrink: 0;
+        background: #F3F3F3;
+        border-radius: 8px;
+        margin-right: 8px;
+        .close-icon {
+          color: #19BC9C;
+          margin-left: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

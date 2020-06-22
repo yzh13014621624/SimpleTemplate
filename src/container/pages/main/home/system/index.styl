@@ -1,0 +1,111 @@
+/*
+ * @description: 系统首页样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-09-03 09:48:24
+ * @LastEditTime: 2019-09-06 14:23:10
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@/assets/style/mixins'
+
+#system_container
+  .filter_wrapper
+    font-size 12px
+    padding 0 0 10px
+  .statistic_wrapper
+    .sales_money_card
+      .ant-card-body
+        padding 10px
+    .ant-card-body
+      height 200px
+      > .ant-row
+          height 100%
+      > .ant-row-flex
+          height 100%
+      .placeholder
+        tc()
+        img
+          wh(80%)
+          padding-bottom 10px
+    .card_item
+      padding-bottom 20px
+      .goods_echarts
+        position absolute
+        left 0
+        top 0
+      .echarts_wrapper
+        position relative
+        height 100%
+        flex-align-center()
+        &.sales_goods
+          justify-content flex-start
+      > .ant-col
+          flex 1
+          &:last-child
+            margin-left 20px
+        .desc
+          margin-bottom 35px
+        .category_name
+          color #333
+          font-size 14px
+        .statistic_num
+          color #333
+          font-size 26px
+        .detail
+          margin-bottom 15px
+        .sales_detail
+          position absolute
+          left 0
+          right 0
+          bottom 0
+        .circle
+          display inline-block
+          wh(10px)
+          border-radius(50%)
+          vertical-align middle
+          &.yellow
+            background-color #FACC14
+          &.gray
+            background-color #E9E9E9
+          &.blue
+            background-color #3399FF
+          &.green
+            background-color #19BC9C
+          &.red
+            background-color #FF6633
+          &.blue2
+            background-color #3FA1FE
+        .sales_money
+          > .ant-col
+              height 100%
+              flex-align-center()
+  .quick_entry_wrapper
+    .ant-card-body
+      padding 0
+      ul
+        list-style none
+        margin 0
+        flex-align()
+        li
+          width 128px
+          height 118px
+          flex-align-center()
+          flex-direction column
+          color #19BC9C
+          font-size 12px
+          cursor pointer
+          &:hover
+            background-color #E5E5E5
+            border-left 1px solid #E5E5E5
+            border-right 1px solid #E5E5E5
+          img
+            margin-bottom 10px
+.modal
+  .btn
+    width: 100px;
+  .ant-form-item
+    flex-align-center()
+  .handleOk
+    background:rgba(25,188,156,1);
+    color: #fff;
+    margin-right: 20px;

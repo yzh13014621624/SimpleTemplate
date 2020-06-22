@@ -1,0 +1,187 @@
+/*
+ * @description: 首页全局样式
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-08-13 15:27:54
+ * @LastEditTime: 2019-09-06 14:22:42
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+#app_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  > .ant-layout {
+    height: 100%;
+  }
+  // 头部
+  .ant-layout-header {
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    background-color: #19BC9C;
+    padding-left: 180px;
+    padding-right: 0;
+    .logo {
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 180px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      img {
+        margin-right: 4px;
+      }
+    }
+    .ant-menu-horizontal {
+      line-height: 64px;
+      border: none;
+      .ant-menu-item {
+        top: 0;
+        border: none !important;
+      }
+      .ant-menu-item-active {
+        background-color: #0CAC8D;
+      }
+      .ant-menu-item-selected {
+        background-color: #0CAC8D;
+      }
+    }
+    .account_wrapper {
+      position: absolute;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: auto;
+      height: 100%;
+      list-style: none;
+      color: #fff;
+      .account_item {
+        padding: 0 20px;
+        cursor: pointer;
+      }
+      .line {
+        width: 1px;
+        height: 14px;
+        background-color: #fff;
+      }
+    }
+  }
+  // 主体
+  .ant-layout-has-sider {
+    // 侧边栏
+    .ant-layout-sider {
+      flex: 0 0 180px !important;
+      max-width: 180px !important;
+      min-width: 180px !important;
+      width: 180px !important;
+      background-color: #EAEDF1;
+      .ant-menu-inline {
+        .ant-menu-submenu {
+          .ant-menu-submenu-title {
+            height: 60px;
+            line-height: 60px;
+            padding-left: 25px;
+            margin: 0;
+            color: #333333 !important;
+            font-size: 16px;
+            border-bottom: 1px solid #E5E5E5;
+            cursor: auto;
+            .ant-menu-submenu-arrow {
+              display: none;
+            }
+          }
+          > .ant-menu {
+            background-color: transparent;
+            .ant-menu-item {
+              height: 50px;
+              line-height: 50px;
+              color: #333;
+              font-size: 14px;
+              padding-left: 25px !important;
+              border-bottom: 1px solid #E5E5E5;
+              margin: 0;
+            }
+            .ant-menu-item-selected {
+              color: #19BC9C;
+              background-color: #fff;
+              border-left-color: #19BC9C;
+            }
+            .ant-menu-item-active {
+              color: #19BC9C;
+            }
+          }
+          .ant-menu-submenu-title,
+          .ant-menu-item {
+            border-left: 5px solid transparent;
+          }
+          .ant-menu-submenu-title:active,
+          .ant-menu-item:active {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    // 页面内容主体
+    .app_wrapper {
+      position: relative;
+      overflow: hidden;
+      .breadcrumb_wrapper {
+        position: absolute;
+        z-index: 900;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: 10px 20px;
+        background-color: #F2F2F2;
+        color: #19BC9C;
+        border-bottom: 1px solid #E5E5E5;
+        h3 {
+          margin: 0;
+          font-size: 14px;
+          border-left: 2px solid #19BC9C;
+          padding-left: 4px;
+        }
+        .refresh_button {
+          position: absolute;
+          display: flex;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          width: 80px;
+          height: 30px;
+          border-radius: 5px;
+          background-color: #fff;
+          color: #19BC9C;
+          font-size: 14px;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          img {
+            padding-right: 2px;
+          }
+        }
+      }
+      .app_content {
+        padding: 60px 20px;
+        background-color: #F9F9F9;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+  .loadding_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -100%);
+  }
+}

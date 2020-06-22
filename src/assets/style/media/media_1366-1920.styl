@@ -1,0 +1,61 @@
+/*
+ * @description: 屏幕1366-1920 像素大小的比率为:1.25
+ * @author: songliubiao
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: songliubiao
+ * @Date: 2019-06-22 13:47:51
+ * @LastEditTime: 2019-06-22 18:10:05
+ * @Copyright: Copyright  ?  2019  Shanghai  Shangjia  Logistics  Co.,  Ltd.  All  rights  reserved.
+ */
+@import '../mixins'
+@media screen and (max-width: 1920px) and (min-width: 1366px)
+
+  // input输入框在1366-1920显示的宽高
+  input
+    &.ant-input
+      width 160px 
+      height 25.6px
+      font-size 11.2px
+    &.unset
+      width auto 
+    &.input-150
+      width 120px !important
+    &.input-180
+      width 144px !important
+    &.input-220
+      width 176px !important
+
+   // input时间框在1366-1920显示的宽高
+  .ant-calendar-picker
+    min-width 160px
+    &.unset
+      width auto
+      min-width unset
+    .ant-calendar-picker-input
+      height 25.6px
+
+  // input下拉框在1366-1920显示的宽高
+  .ant-select
+    width 160px !important
+    &.select-95
+      width 76px !important
+    &.select-120
+      width 96px !important
+    &.select-150
+      width 120px !important
+    &.select-220
+      width 176px !important
+    .ant-select-selection
+      height 25.6px
+      .ant-select-selection__rendered
+        line-height 25.6px
+    .ant-select-selection--multiple
+      min-height unset
+  // form表单在1366-1920以下显示的值
+  .ant-form
+      label
+        font-size 11.2px !important
+
+  // 页面字体在1366-1920的大小
+  // * 
+    // font-size 11.2px !important

@@ -1,0 +1,56 @@
+/*
+ * @description: antd - button 样式覆盖文件
+ * @author: huxianghe
+ * @github: git@code.aliyun.com:WOHAOYUN/thematrix.git
+ * @lastEditors: huxianghe
+ * @Date: 2019-06-04 15:29:50
+ * @LastEditTime: 2020-03-24 17:23:26
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '../mixins'
+
+.ant-btn
+  height 32px
+  &.w-70
+    width 70px
+  &.w-80
+    width 80px
+  &.w-90
+    width 90px
+  &.w-95
+    width 95px
+  &.w-100
+    width 100px
+  &.w-120
+    width 120px
+  &.w-160
+    width 160px
+  // 确认/取消按钮样式
+  &.b-confirm,
+  &.b-cancel
+    width 160px
+    height 38px
+    line-height 38px
+    border-radius(5px)
+    f14()
+    font-weight 500
+  &.b-cancel
+    bd()
+    color #FFAD28
+    margin-left 50px
+    &.m-0
+      margin none
+  // 分页按钮
+  &.ant-btn-sm
+    height 24px;/*no*/
+  > .anticon + span,
+  > span + .anticon
+    margin-left 4px
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover
+  background-color #DCDDDE
+
+.ant-btn[disabled],
+.ant-btn[disabled]:hover
+  color #FFFFFF
